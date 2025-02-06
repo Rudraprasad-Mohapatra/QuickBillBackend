@@ -23,7 +23,7 @@ app.post('/api/generate-invoice', async (req, res) => {
     // Generate a unique identifier for the receipt
     const receiptId = uuidv4();
     // const receiptUrl = `http://localhost:3000/api/download-receipt/${receiptId}`;
-    const receiptUrl = `https://quickbill-rudraprasad-mohapatras-projects.vercel.app/api/download-receipt/${receiptId}`;
+    const receiptUrl = `https://quick-bill-backend-rudraprasad-mohapatras-projects.vercel.app/api/download-receipt/${receiptId}`;
 
     // Generate QR Code with the receipt URL
     const qrCodeDataURL = await qrcode.toDataURL(receiptUrl);
