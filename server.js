@@ -8,8 +8,8 @@ const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 app.use(cors({
-    // origin: 'https://quickbill-rudraprasad-mohapatras-projects.vercel.app',
-    origin: 'http://localhost:5173',
+    origin: 'https://quickbill-rudraprasad-mohapatras-projects.vercel.app',
+    // origin: 'http://localhost:5173',
     methods: 'GET,POST',
     credentials: true,
 }));
